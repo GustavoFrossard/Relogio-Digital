@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(-45deg, #2aa8b1, #56aee9, #3159c7, #f2f6f7);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+  transition: background 0.5s ease;
+}
+
+.container {
+  text-align: center;
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px 50px;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.clock {
+  font-size: 4rem;
+  color: #fff;
+  text-shadow: 0 0 15px rgba(0, 255, 255, 0.7);
+  margin-bottom: 10px;
+}
+
+.date {
+  font-size: 1.2rem;
+  color: #ddd;
+  margin-bottom: 15px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.dark-mode {
+  background: linear-gradient(-45deg, #141313, #1a1a1a, #2c3e50, #000000);
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
